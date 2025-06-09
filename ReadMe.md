@@ -30,12 +30,12 @@ Limit each IP to **10 requests per minute** using a **sliding time window** logi
 ## Project Structure
 
 Akto-Internship-Option-1-API-Rate-Limiter/
-│
-├── limiter.js # Rate limiting logic
-├── upstashRedisClient.js # Upstash Redis connection
-├── server.js # Main Express server
-├── .env # Environment variables
-└── package.json
+
+limiter.js # Rate limiting logic
+upstashRedisClient.js # Upstash Redis connection
+server.js # Main Express server
+.env # Environment variables
+package.json
 
 
 ---
@@ -103,6 +103,7 @@ Returns:
 
 After 10 requests within a minute, it returns:
 
+```json
 {
   "message": "Rate limit exceeded. Try again later."
 }
