@@ -29,12 +29,16 @@ Limit each IP to **10 requests per minute** using a **sliding time window** logi
 
 ## Project Structure
 
-Akto-Internship-Option-1-API-Rate-Limiter/
+Akto-Internship-Option-1-API-Rate-Limiter
 
 limiter.js # Rate limiting logic
+
 upstashRedisClient.js # Upstash Redis connection
+
 server.js # Main Express server
+
 .env # Environment variables
+
 package.json
 
 
@@ -63,12 +67,14 @@ npm install
 
 ---
 
-### ✅ Step 3: Configure Environment Variables
+### Step 3: Configure Environment Variables
 
 Create a `.env` file in the root directory and add the following content:
 
 UPSTASH_REDIS_REST_URL=your-upstash-url
+
 UPSTASH_REDIS_REST_TOKEN=your-upstash-token
+
 PORT=5000
 
 
@@ -100,6 +106,7 @@ Returns:
 {
   "message": "Pong!"
 }
+```
 
 After 10 requests within a minute, it returns:
 
@@ -107,3 +114,4 @@ After 10 requests within a minute, it returns:
 {
   "message": "Rate limit exceeded. Try again later."
 }
+```
