@@ -87,14 +87,14 @@ Optional: Use `npx nodemon server.js` if you want the server to auto-restart on 
 
 ---
 
-### ✅ Step 5: Test the Endpoint
+### Step 5: Test the Endpoint
 
 You can now send requests to the `/ping` endpoint:
 
 GET http://localhost:3000/ping
 
 
-#### ✅ Successful Request:
+#### Successful Request:
 Returns:
 ```json
 {
